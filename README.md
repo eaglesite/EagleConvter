@@ -2,7 +2,7 @@
 
 媒体格式转换桌面工具，基于 FFmpeg + PySide6。
 
-![界面预览](1.png)
+![界面预览](https://www.eagleclouds.com)
 
 ## 功能
 

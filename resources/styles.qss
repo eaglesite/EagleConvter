@@ -1,0 +1,261 @@
+/* Convter Dark Theme */
+
+QMainWindow, QWidget {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+QMainWindow, QLabel, QPushButton, QComboBox, QGroupBox, QListWidget, QScrollBar {
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 13px;
+}
+
+/* ---- App Title ---- */
+#appTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #a6e3a1;
+    letter-spacing: 1px;
+}
+#appVersion {
+    font-size: 11px;
+    color: #6c7086;
+    padding-top: 8px;
+}
+
+/* ---- Buttons ---- */
+QPushButton {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 6px 18px;
+    font-size: 13px;
+}
+QPushButton:hover {
+    background-color: #45475a;
+    border-color: #585b70;
+}
+QPushButton:pressed {
+    background-color: #585b70;
+}
+QPushButton:disabled {
+    background-color: #252536;
+    color: #585b70;
+    border-color: #313244;
+}
+
+#addBtn, #clearBtn, #clearDoneBtn, #cancelAllBtn {
+    padding: 4px 12px;
+    font-size: 12px;
+}
+
+#startBtn {
+    background-color: #a6e3a1;
+    color: #1e1e2e;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 36px;
+    border: none;
+    border-radius: 8px;
+}
+#startBtn:hover {
+    background-color: #94e2d5;
+}
+#startBtn:disabled {
+    background-color: #313244;
+    color: #585b70;
+}
+
+#removeBtn {
+    background: transparent;
+    color: #f38ba8;
+    border: none;
+    font-size: 12px;
+    padding: 0;
+}
+#removeBtn:hover {
+    color: #eba0ac;
+}
+
+/* ---- Group Boxes ---- */
+QGroupBox {
+    font-weight: 600;
+    font-size: 13px;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 8px;
+    margin-top: 12px;
+    padding: 16px 12px 12px;
+}
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 6px;
+    background-color: #1e1e2e;
+}
+
+/* ---- Inputs ---- */
+QComboBox {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 4px;
+    padding: 4px 8px;
+    min-height: 24px;
+}
+QComboBox:hover {
+    border-color: #585b70;
+}
+QComboBox::drop-down {
+    border: none;
+    width: 24px;
+}
+QComboBox QAbstractItemView {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    selection-background-color: #45475a;
+}
+
+QSlider::groove:horizontal {
+    height: 4px;
+    background: #313244;
+    border-radius: 2px;
+}
+QSlider::handle:horizontal {
+    background: #a6e3a1;
+    border: none;
+    width: 14px;
+    height: 14px;
+    margin: -5px 0;
+    border-radius: 7px;
+}
+QSlider::handle:horizontal:hover {
+    background: #94e2d5;
+}
+QSlider::sub-page:horizontal {
+    background: #a6e3a1;
+    border-radius: 2px;
+}
+
+QLabel {
+    color: #cdd6f4;
+}
+
+/* ---- Preset Description ---- */
+#presetDesc {
+    font-size: 12px;
+    color: #a6adc8;
+    font-style: italic;
+}
+
+/* ---- Drop Hint ---- */
+#dropHint {
+    color: #6c7086;
+    font-size: 12px;
+    border: 2px dashed #45475a;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* ---- List Widget (file list) ---- */
+QListWidget {
+    background-color: #181825;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    outline: none;
+}
+QListWidget::item {
+    border-bottom: 1px solid #252536;
+}
+QListWidget::item:selected {
+    background-color: #313244;
+}
+
+#fileName {
+    font-weight: 500;
+    color: #cdd6f4;
+}
+#fileInfo {
+    color: #6c7086;
+    font-size: 11px;
+}
+#fileSize {
+    color: #6c7086;
+    font-size: 11px;
+    min-width: 60px;
+}
+
+/* ---- Progress ---- */
+#progressTitle {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QProgressBar {
+    background-color: #313244;
+    border: none;
+    border-radius: 4px;
+    min-height: 22px;
+    height: 22px;
+    padding: 1px;
+    text-align: center;
+    font-size: 12px;
+    color: #cdd6f4;
+}
+QProgressBar::chunk {
+    background-color: #a6e3a1;
+    border-radius: 3px;
+}
+
+#taskName {
+    font-weight: 500;
+    font-size: 12px;
+}
+#taskState {
+    font-size: 12px;
+}
+#taskInfo {
+    font-size: 11px;
+    color: #a6adc8;
+}
+#taskSize {
+    font-size: 11px;
+    color: #6c7086;
+}
+
+/* ---- Scroll Area ---- */
+QScrollArea {
+    border: none;
+    background: transparent;
+}
+QScrollBar:vertical {
+    background: #181825;
+    width: 8px;
+    border: none;
+}
+QScrollBar::handle:vertical {
+    background: #45475a;
+    border-radius: 4px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover {
+    background: #585b70;
+}
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+/* ---- Status Bar ---- */
+#statusBar {
+    font-size: 12px;
+    color: #6c7086;
+    padding: 4px 0;
+}
+
+/* ---- Splitter ---- */
+QSplitter::handle {
+    background-color: #313244;
+    width: 1px;
+}

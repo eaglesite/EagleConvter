@@ -1,8 +1,10 @@
 # EagleConvter
 
+[English](./README.en.md) | **中文**
+
 媒体格式转换桌面工具，基于 FFmpeg + PySide6。
 
-![界面预览](dash.png)
+![界面预览](./dash.png)
 
 ## 功能
 
